@@ -18,7 +18,7 @@ const CourseCard = ({course}) => {
                      ))
                   }
                </div>
-               <p className="text-gray-500">45</p>
+               <p className="text-gray-500">14</p>
             </div>
             <p className="text-base font-semibold text-gray-800">${(course.coursePrice - course.discount * course.coursePrice / 100 ).toFixed(2)}</p>
          </div>

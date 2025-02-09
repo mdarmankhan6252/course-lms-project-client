@@ -6,6 +6,7 @@ export const AppContext = createContext()
 
 export const AppContextProvider = (props) => {
    const [allCourses, setAllCourses] = useState([]);
+   const [isEducator, setIsEducator] = useState(true)
    const navigate = useNavigate();
 
    const fetchAllCourses = async() =>{
@@ -17,7 +18,9 @@ export const AppContextProvider = (props) => {
 
    const value = {
       allCourses,
-      navigate
+      navigate,
+      isEducator,
+      setIsEducator
    }
    return (
       <AppContext.Provider value={value}>
