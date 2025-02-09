@@ -1,8 +1,10 @@
+import Hero from "../../components/student/Hero";
+
 const Home = () => {
    return (
-      <div>
-         <h1>Home page.</h1>
-         
+      <div className="flex flex-col items-center justify-center space-y-7 text-center">
+         <Hero />
+
       </div>
    );
 };
